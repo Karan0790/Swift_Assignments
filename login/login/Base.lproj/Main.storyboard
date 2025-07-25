@@ -34,7 +34,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="forgot username"/>
                                 <connections>
-                                    <action selector="forgotUsernameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E5o-d4-HAC"/>
+                                    <action selector="forgotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R3h-Mm-THE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYT-1f-es3">
@@ -42,6 +42,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="forgot password"/>
+                                <connections>
+                                    <action selector="forgotPass:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qET-3t-MFr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auU-gD-RlI">
                                 <rect key="frame" x="157" y="445" width="79" height="48"/>
@@ -61,7 +64,7 @@
                         <outlet property="forgotPasswordButton" destination="RYT-1f-es3" id="t5o-Ih-ywz"/>
                         <outlet property="forgotUsernameButton" destination="JwY-UN-62W" id="INu-3O-Gw3"/>
                         <outlet property="inputField" destination="eHI-Su-Kay" id="kZz-9g-gKe"/>
-                        <segue destination="xEE-99-KDm" kind="show" id="KEP-HA-c8J"/>
+                        <segue destination="xEE-99-KDm" kind="show" identifier="main" id="7LK-7C-E0b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -104,7 +107,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KEP-HA-c8J"/>
+        <segue reference="fKR-Qm-PPh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
